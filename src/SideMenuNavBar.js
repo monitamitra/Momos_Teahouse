@@ -15,7 +15,6 @@ function NavBar() {
             function changeNavBar() {
                 const scrollPos = $(document).scrollTop();
                 const menu = $('#HotMilkTeaSection').offset().top;
-                const Header = $("#OrderOnlineHeader").outerHeight;
                 const padding =  parseInt($('#cheeseFoamSection').css("scroll-margin-top")) + 1;
                 
                 
@@ -29,7 +28,7 @@ function NavBar() {
             
                }
 
-    const [state, setState] = useState(0);
+    const [state] = useState(0);
 
     useEffect(() => {
         window.addEventListener("scroll", changeNavBar);

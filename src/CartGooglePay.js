@@ -8,7 +8,7 @@ import {collection, getDocs, doc, updateDoc} from "firebase/firestore";
 
 function GooglePay() {
     const navigate = useNavigate();
-    const {item, totalAmount, clearCart} = useContext(ContextCart);
+    const {totalAmount, clearCart} = useContext(ContextCart);
     const {user, rewardPurchase} = useUserAuth();
     const [customers, setCustomers] = useState([]);
     const customerCollectionRef = collection(db, "Customers");
@@ -22,7 +22,7 @@ function GooglePay() {
         }
 
         getCustomers();
-    }, [])
+    }, [customerCollectionRef])
 
     let currUser = "";
 

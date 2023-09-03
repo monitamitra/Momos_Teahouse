@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./HotItem.module.css";
-import { useNavigate, navigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
 const HotTea = ({hotTea}) => {
     const link = `${hotTea.name}`.replace(/\s+/g, '-');

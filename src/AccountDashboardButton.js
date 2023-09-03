@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./LoginButton.module.css";
-import {useNavigate, navigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import { useUserAuth } from "./UserAuthContext";
 
 function MyAccountButton() {

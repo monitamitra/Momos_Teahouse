@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import $ from "jquery";
 
 function Footer() {
     const menuItems = (

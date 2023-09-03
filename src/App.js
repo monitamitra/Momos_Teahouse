@@ -1,9 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 import "./App.css";
-import {Routes, Route, Switch} from "react-router-dom";
-import ProtectedRoute from "./ProtectedRoute";
-import { Austin, Carrollton, Cypress, SugarLand, Mansfield, 
-  CollegeStation, Katy, Houston  } from "./LocationList";
+import {Routes, Route} from "react-router-dom";
 import {MatchaBrulee, StrawMatcha, PassionGreen, 
   Chocolate, StrawKiwi, Hibiscus} from "./NewItemList";
   import {Strawberry, RedBean, Mango, Oreo, 
@@ -28,12 +25,9 @@ import PopupDivIceMilk from "./PopupDivIceMilkTea";
 import AboutPage from "./AboutPageComponents/AboutPage";
 import ChangeTea from "./ChangeTea";
 import HomePage from "./HomePage";
-import Rewards from "./Rewards";
 import GiftCard from "./GiftCard";
 import OrderOnline from "./OrderOnline";
 import ShopLocations from "./ShopLocations";
-import GiftCardCheckOut from "./GiftCardCheckOut";
-import Preferences from "./Preferences";
 import CartContext from "./CartContext";
 import {Login} from "./Login";
 import { Signup } from "./Signup";
@@ -181,7 +175,6 @@ function App() {
           <Route path="/about" element={<AboutPage />}/>
           <Route path="/menu" element={<ChangeTea />} />
           <Route path="/locations" element={<ShopLocations />} />
-          <Route path="/rewards" element={<Rewards />} />
           <Route path="/buygiftcard" element={<GiftCard />} />
           <Route path="/orderonline" element={<OrderOnline />} />
         </Routes>

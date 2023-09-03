@@ -1,18 +1,16 @@
-import React, {useState, useEffect, useContext} from "react";
+import React, {useState, useEffect} from "react";
 import {db} from "./Firebase";
 import {collection, getDocs} from "firebase/firestore";
 import { useUserAuth } from "./UserAuthContext";
 import styles from "./MyAccount.module.css";
 import CartHeader from "./CartHeader";
 import Footer from "./Footer";
-import { ContextCart } from "./ShoppingCartContext";
 import { useNavigate } from "react-router-dom";
 
 export const MyAccount = () => {
     const navigate = useNavigate();
     const [customers, setCustomers] = useState([]);
     const customerCollectionRef = collection(db, "Customers");
-    const {previousOrders} = useContext(ContextCart);
 
     const {user} = useUserAuth();
 
@@ -25,7 +23,7 @@ export const MyAccount = () => {
         }
 
         getCustomers();
-    }, [])
+    }, [customerCollectionRef])
 
     if (!user) {
         return (

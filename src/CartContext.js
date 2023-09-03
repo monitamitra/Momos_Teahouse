@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import { useNavigate, navigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import styles from "./Cart.module.css";
 import CartHeader from "./CartHeader";
 import Footer from "./Footer";

@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./HotItem.module.css";
-import {navigate, useNavigate} from "react-router-dom";
-import PopupDiv from "./PopupDivHotMilkTea";
+import {useNavigate} from "react-router-dom";
 
 const HotCoffee = ({hotCoffee}) => {
     const link = `${hotCoffee.name}`.replace(/\s+/g, '-');

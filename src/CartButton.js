@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import styles from "./CartButton.module.css";
 import { ContextCart } from "./ShoppingCartContext";
-import { useNavigate, navigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
 function CartButton() {
 

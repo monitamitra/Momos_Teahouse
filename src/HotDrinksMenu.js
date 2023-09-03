@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./HotDrinksMenu.module.css";
-import $ from "jquery";
 import HotMilkTeaMenu from "./HotMilkTeaMenu";
 import HotTeaMenu from "./HotTeaMenu";
 import HotCoffeeMenu from "./HotCoffeeMenu";

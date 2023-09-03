@@ -4,12 +4,12 @@ import styles from "./Cart.module.css";
 import { ContextCart } from "./ShoppingCartContext";
 
 export const CartItem = ({id, name, price, imageSrc, amount}) => {
-const {item, removeItem, addOneToCart, deleteOneFromCart} = useContext(ContextCart);
+const {removeItem, addOneToCart, deleteOneFromCart} = useContext(ContextCart);
 const navigate = useNavigate();
     return (
         <div className={styles.product}>
             <div className={styles.imageContainer}>
-                <img src={imageSrc}></img>
+                <img alt="item" src={imageSrc}></img>
             </div>
                 <div className={styles.name}>
                     <h2>{name}</h2>

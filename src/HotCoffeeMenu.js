@@ -26,7 +26,7 @@ const HotCoffeeMenu = () => {
             }
         }
 
-    const [state, setState] = useState(0);
+    const [state] = useState(0);
 
     useEffect(() => {
         window.addEventListener("scroll", HotCoffeeItemsScroll);

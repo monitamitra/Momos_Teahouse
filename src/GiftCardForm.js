@@ -1,11 +1,9 @@
-import React, {useState, useEffect} from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 import styles from "./GiftCardForm.module.css";
 import $ from "jquery";
 import { useUserAuth } from "./UserAuthContext";
 
 import GooglePay from "./GiftCardGooglePay";
-import { type } from "@testing-library/user-event/dist/type";
 
 function GiftCardForm() {
     const {setGiftCardPurchase} = useUserAuth();

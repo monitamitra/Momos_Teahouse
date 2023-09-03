@@ -13,7 +13,6 @@ function HotDrinksButton() {
 
     function changeButton() {
         const scrollPos = $(document).scrollTop();
-        const menu = document.getElementById("newItemsSection").scrollTop;
         const padding =  parseInt($('#customerFavoritesSection').css("scroll-margin-top")) + 1;
         const OT = $('#hotDrinksMenu').offset().top;
 
@@ -29,7 +28,7 @@ function HotDrinksButton() {
     
     }
 
-    const [state, setState] = useState(0);
+    const [state] = useState(0);
 
     useEffect(() => {
         window.addEventListener("scroll", changeButton);

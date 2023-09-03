@@ -1,5 +1,3 @@
-import React from "react";
-
 
 export const reducer = (state, action) => {
     if (action.type === "REMOVE_ITEM") {

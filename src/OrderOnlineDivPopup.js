@@ -8,12 +8,16 @@ import CartHeader from "./CartHeader";
 import Footer from "./Footer";
 import { useContext } from "react";
 import { ContextCart } from "./ShoppingCartContext";
+import ReactGA from "react-ga";
 
 
 const PopupDiv = ({menuItem}) => {
 
     const {item, addOneToCart, deleteOneFromCart, 
         addNewItemToCart} = useContext(ContextCart);
+    
+        const TRACKING_ID = "G-JG1C6CQ7L6";
+        ReactGA.initialize(TRACKING_ID);
    
     return (
     <div>
@@ -36,6 +40,11 @@ const PopupDiv = ({menuItem}) => {
                         deleteOneFromCart(menuItem.id);
                     }}>-</button>
                     <button className={styles.button} onClick={() => {
+                         ReactGA.event({
+                            category: 'Button',
+                            action: 'Click',
+                            label: `${menuItem.name}`
+                          });
                         addOneToCart(menuItem.id);
                     }}>+</button>
                 </div> 

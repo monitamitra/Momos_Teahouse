@@ -1,8 +1,6 @@
-import React, {useState, useEffect, useContext} from "react";
-import {Route, Routes} from "react-router-dom";
+import React from "react";
 import styles from "./Location.module.css";
 import {useNavigate} from 'react-router-dom';
-import OrderOnline from "./OrderOnline";
 
 const Location = ({location}) => {
 

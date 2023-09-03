@@ -5,7 +5,6 @@ import HotDrinksMenu from "./HotDrinksMenu";
 import styles from "./OrderOnline.module.css"
 import FilterMenu from "./FilterMenu";
 import Footer from "./Footer";
-import $ from "jquery";
 
 function OrderOnline({location}) {
 

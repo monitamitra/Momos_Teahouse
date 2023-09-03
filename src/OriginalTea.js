@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Item.module.css";
-import { useNavigate, navigate } from "react-router-dom";
-import OrderOnlineDivPopup from "./OrderOnlineDivPopup";
+import { useNavigate} from "react-router-dom";
 
 const OriginalTea = ({originalTea}) => {
     const link = `${originalTea.name}`.replace(/\s+/g, '-');

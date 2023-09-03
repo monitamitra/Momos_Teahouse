@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Item.module.css";
-import {useNavigate, navigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 const FruitTea = ({fruitTea}) => {
     const link = `${fruitTea.name}`.replace(/\s+/g, '-');

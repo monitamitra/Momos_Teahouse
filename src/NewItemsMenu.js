@@ -29,7 +29,7 @@ const NewItemsMenu = () => {
                 $('#newItemsButton').css('color', '#5a4fcf');
             }
         }
-        const [state, setState] = useState(0);
+        const [state] = useState(0);
 
         useEffect(() => {
             window.addEventListener("scroll", NewItemsScroll);

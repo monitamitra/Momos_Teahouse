@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./LoginPage.module.css";
 import { useUserAuth } from "./UserAuthContext";
 import { db } from "./Firebase";
-import {collection, getDocs, addDoc} from "firebase/firestore";
+import {collection, addDoc} from "firebase/firestore";
 import CartHeader from "./CartHeader";
 import Footer from "./Footer";
 

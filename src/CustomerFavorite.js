@@ -1,7 +1,6 @@
 import React from "react";
-import {navigate, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import styles from "./Item.module.css";
-import OrderOnlineDivPopup from "./OrderOnlineDivPopup";
 
 const CustomerFavorite = ({customerFavorite}) => {
     const link = `${customerFavorite.name}`.replace(/\s+/g, '-');

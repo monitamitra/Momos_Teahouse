@@ -3,7 +3,6 @@ import IcedDrinksButton from "./IcedDrinksButton";
 import HotDrinksButton from "./HotDrinksButton";
 import styles from "./FilterMenu.module.css";
 import NavBar from "./SideMenuNavBar";
-import $ from "jquery";
 
 function FilterMenu({location}) {
     const menu =  (
