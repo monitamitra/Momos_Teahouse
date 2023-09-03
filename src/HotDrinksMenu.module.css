@@ -1,0 +1,44 @@
+
+.hotDrinks h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:fit-content;
+    margin-left: 9%;
+    margin-top: 2%;
+    font-size: 2.5rem;
+}
+
+.hotMilkTea h3 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:fit-content;
+    margin-left: 9%;
+    margin-top: 2%;
+    font-size: 2rem;
+}
+
+.hotMilkTea {
+    scroll-margin-top: 10rem;
+}
+
+.hotTea h3 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:fit-content;
+    margin-left: 9%;
+    margin-top: 2%;
+    font-size: 2rem;
+}
+
+.hotTea {
+    scroll-margin-top: 10rem;
+}
+
+.hotCoffee h3 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:fit-content;
+    margin-left: 9%;
+    margin-top: 2%;
+    font-size: 2rem;
+}
+
+.hotCoffee {
+    scroll-margin-top: 10rem;
+}

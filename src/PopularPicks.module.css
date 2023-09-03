@@ -1,0 +1,30 @@
+
+.popularItems {
+    background-color: #CCCCFF;
+    text-transform: uppercase;
+    height: auto;
+    width:100%;
+    margin-top: 30rem;
+    display: block;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.popularItems h2 {
+    padding: 50px;
+    padding-top: 80px;
+    text-align: center;
+    font-size: 28px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+ .menuButton {
+    width:fit-content;
+    border-style: solid;
+    position: absolute;
+    bottom: 6%;
+    left: 44%;
+}

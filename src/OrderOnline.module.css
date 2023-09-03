@@ -1,0 +1,10 @@
+
+.menuOptions {
+    position: sticky;
+    top: 0px;
+    z-index:6;
+}
+
+.menu {
+    scroll-margin-top: 10rem;
+}

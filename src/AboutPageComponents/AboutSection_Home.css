@@ -1,0 +1,34 @@
+.about {
+    margin-top: 3rem;
+    display:block;
+    height: auto;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about_image {
+    width: 40%;
+    float: left;
+}
+
+.about_image img {
+    width: 50%;
+    margin-left: 40%;
+}
+.about_info {
+    width: 50%;
+    float: right;
+    padding-left: 10px;
+}
+
+.about_info h2 {
+    text-transform: uppercase;
+    margin-top: 3rem;
+    padding: 10px;
+}
+
+.about_info p {
+    display: block;
+    font-size: 30px;
+    line-height: 2.5rem;
+}

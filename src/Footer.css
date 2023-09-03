@@ -1,0 +1,23 @@
+
+.footer {
+    background-color: #CCCCFF;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    height: 15rem;
+}
+
+#footHeader {
+    padding: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.footer #trademark {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
+    font-size: 30px;
+    color: black;
+}

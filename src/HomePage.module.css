@@ -1,0 +1,16 @@
+
+.NavBarBackground {
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://i.ytimg.com/vi/wBNkT_0cbmE/maxresdefault.jpg?v=6271c7b7");
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70rem;
+}
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+
+.loginWrapper {
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: solid !important;
+}
+
+.loginWrapper .button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #5a4fcf;
+    color: white;
+    padding:10px;
+    margin: 10px;
+    border-style: none;
+    cursor: pointer;
+}

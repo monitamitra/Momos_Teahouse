@@ -1,0 +1,104 @@
+
+.ingredients {
+    height: auto;
+}
+
+
+.ingredients h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding: 5px;
+}
+
+.ingredients p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    width: 80%;
+    line-height: 2rem;
+    margin-left: 10%;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.mango {
+    height: 40rem;
+    width: 45rem;
+    background-size: 45rem;
+    background-image: url("https://nationaltoday.com/wp-content/uploads/2022/05/28-Mango-Month.jpg");
+    background-repeat: no-repeat;
+    position:relative;
+    left:40%;
+    top: 20px;
+    padding: 5rem;
+   
+}
+
+.teaLeaves {
+    width: fit-content;
+    height:fit-content;
+    position: absolute;
+    left: 17%;
+    top: 55%;
+}
+
+.teaLeaves img {
+    display: block;
+    opacity: 0.8;
+    width: 30rem;
+}
+
+.teaVersity {
+    width: auto;
+    height: 30rem;
+    border-style: solid;
+    border-color: #CCCCFF;
+    border-width: 5px;
+    position: relative;
+}
+
+.teaVersity h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding: 5px;
+}
+
+.teaVersity p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    width: 40%;
+    line-height: 2rem;
+    margin-left: 10%;
+    padding: 20px;
+    padding-bottom: 60px;
+    margin-left: 37%;
+    position: absolute;
+    bottom: 14%;
+}
+
+.Matcha {
+    width:fit-content;
+    padding: 60px;
+    position: absolute;
+    bottom: 12%;
+    left: 15%;
+}
+.teaVersity img {
+    width: 15rem;
+}
+
+.menuButton {
+    position: absolute;
+    left:44%;
+    bottom: 10%;
+}
+
+.ingredients strong {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}

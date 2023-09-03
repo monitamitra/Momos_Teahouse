@@ -1,0 +1,9 @@
+
+.title {
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    padding: 15px;
+    letter-spacing: 0.4rem;
+    text-align: center;
+}

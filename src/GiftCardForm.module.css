@@ -1,0 +1,175 @@
+
+
+.GiftCardForm {
+    background-color: white;
+    padding: 2rem;
+    height: 55rem;
+    width: 40rem;
+}
+
+.GiftCardForm h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.chooseAmount {
+    position: relative;
+}
+
+.googlePay {
+    position: absolute;
+    left: 30%;
+    bottom:4%;
+}
+
+.amount {
+    position: absolute;
+    left: 7%;
+}
+
+.GiftCardForm .sectionLabel {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin-left: 0;
+    margin-top: 0;
+    border-style: none;
+    border-bottom: solid;
+    border-color: #5a4fcf;
+    border-width: 3px;
+    padding-bottom: 2px;
+}
+
+.GiftCardForm .sideLabel {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.GiftCardForm .formInput {
+   width: 15rem;
+   height: 2.5rem;
+   border-style: solid;
+   border-color:black;
+}
+
+.Personalize {
+    position: absolute;
+    top: 28%;
+    height: 20rem;
+    width: 40rem;
+}
+
+.giftcardTo {
+    position: absolute; 
+    left: 13%;
+}
+
+.giftcardSender {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
+
+.giftcardmessage {
+    position: absolute;
+    top: 70%;
+    left: 6%;
+    width: 39rem;
+    height: 11rem;
+}
+
+.giftcardmessage .formInput {
+    height: 10rem;
+    position: absolute;
+    left: 13%;
+    border-style: solid;
+    border-color: black;
+}
+
+.giftcardmessage .sideLabel {
+    position: absolute;
+    
+}
+
+.Delivery {
+    position: absolute;
+    bottom: 13%;
+    width: 40rem;
+    height: 10rem;
+}
+
+#email {
+    display: none;
+}
+
+#phone {
+    display: none;
+}
+
+.controlInput {
+    position: absolute;
+    top: 22%;
+    left: 20%;
+    border-style: none;
+    border-bottom: solid black;
+    padding-right: 5rem;
+}
+
+.button {
+    margin: 20px;
+    border-style: none;
+    background-color: white;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.button:focus {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: solid;
+    border-color: #5a4fcf;
+    border-width: 3.5px;
+    font-weight:bold;
+}
+
+.recipientInfoInput {
+   position: absolute;
+   bottom: 2%;
+   left: 20%;
+}
+
+.recipientInfoInput input {
+    height: 2.5rem;
+    width: 15rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: black;
+    border-style: solid;
+    border-color: black;
+}
+
+.giftcardmessage input {
+    height: 10rem;
+}
+
+.sendLabel {
+    position: absolute;
+    left: 6%;
+}
+
+.checkoutButton {
+    position: absolute;
+    bottom: 4%;
+    left: 40%;
+}
+
+.checkButton {
+    color: white;
+    background-color: #5a4fcf;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 6px;
+}
+

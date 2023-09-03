@@ -1,0 +1,207 @@
+
+.cartEmpty {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10% 35%;
+    width: 30rem;
+}
+
+.cartEmpty h1 {
+    font-size:60px;
+}
+
+.cartEmpty p {
+    font-size: 20px;
+}
+
+
+.continueShopping {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    position: relative;
+    margin-left: 10%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top:1rem;
+    width:fit-content;
+    cursor: pointer;
+}
+
+.continueShopping img {
+    width:40px;
+    height:40px;
+}
+
+.cartTitle {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left:15%;
+    margin-top:5rem;
+    margin-bottom:4rem;
+    
+}
+
+.ProductContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 4.4rem 10%;
+    flex-direction:row;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70rem;
+    height:15rem;
+    margin: 0 0.5rem 2.3rem 0.5rem;
+    border-style:none;
+    border-bottom: solid;
+    padding-bottom: 40px;
+    border-color: #5D3FD3;
+    position: relative;
+}
+
+.product .imageContainer {
+    height: 15rem;
+    width:15rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    background: white;
+    position:absolute;
+}
+
+.imageContainer img {
+    width: 100%;
+}
+
+.name {
+    position: absolute;
+    left:25%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px;
+}
+
+.price {
+    position: absolute;
+    right:2%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px;
+}
+
+.subtotal {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:15px;
+}
+
+.subtotal button {
+    background-color: #5D3FD3;
+    color:white;
+    font-size:20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:20px;
+    cursor: pointer;
+}
+
+.changeAmount {
+    position: absolute;
+    right:15%;
+    top:8%;
+    font-size:20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display:flex;
+    flex-direction: column;
+}
+
+.customize {
+    position: absolute;
+    bottom:35%;
+    right:15%;
+}
+
+.customize button {
+    background-color: #5D3FD3;
+    color:white;
+    font-size:18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:5px;
+    cursor: pointer;
+}
+
+.remove {
+    position: absolute;
+    bottom:13%;
+    right:15%;
+}
+
+.remove button {
+    background-color: #5D3FD3;
+    color:white;
+    font-size:18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-right:13px;
+    padding-left: 13px;
+    cursor: pointer;
+}
+
+.changeAmount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.changeAmount .button {
+    background-color: #5D3FD3;
+    color:white;
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-right:13px;
+    padding-left: 13px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 15px;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.filterAmt {
+    display: flex;
+    flex-direction: column;
+}
+
+.changeAmount label{
+    font-size:20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:10px;
+    padding-bottom:15px;
+}
+
+.changeAmount input {
+    font-size:15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:5px;
+    width:6rem;
+}
+
+.total {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-left:42%;
+    margin-bottom:5rem;
+    font-size:20px;
+}
+
+.total button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #5D3FD3;
+    color: white;
+    margin:15px;
+    padding:10px;
+    font-size:18px;
+}

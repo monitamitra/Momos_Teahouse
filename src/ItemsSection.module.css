@@ -1,0 +1,15 @@
+
+.Items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2.5rem 4.5%;
+}
+
+.Item {
+    margin-bottom: 2.5rem;
+}
+
+.Item:hover {
+    border-radius: 20px;
+}
