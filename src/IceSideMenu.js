@@ -41,11 +41,13 @@ function IceSideMenu() {
 
   const sideMenu = (
     <div className={styles.navBar} id="IcedMenuSideOptions">
+  <div className={styles.temp}>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
         <button id="newItemsButton" onClick={newItemsHandleClick} className={styles.nav_button} >New Items</button>
         <button id="cusFavButton" onClick={favoritesHandleClick} className={styles.nav_button}>Customer Favorites</button>
         <button id="milkTeaButton" onClick={milkTeaHandleClick} className={styles.nav_button}>Milk Tea</button>
         <button id="fruitTeaButton" onClick={fruitTeaHandleClick} className={styles.nav_button}>Fruit Tea</button>
+  </div>
     <div className={styles.dropdown}>
         <button id="moreButton" className={styles.more} > <i class="fa fa-caret-down"> </i> More</button>
         <div className={styles.dropdownContent}>

@@ -60,7 +60,7 @@ export const reducer = (state, action) => {
             totalItems: 0,
             totalAmount: 0, 
         });
-
+        
         return {...state, totalItems, totalAmount};
     }
 

@@ -33,8 +33,50 @@ import {Login} from "./Login";
 import { Signup } from "./Signup";
 import { MyAccount } from "./MyAccount";
 import CartCheckout from "./CartCheckout"
+import ChatBot from "react-simple-chatbot";
 
 function App() {
+  
+  const steps = [
+    {
+      id: '0',
+      message: 'Hello. What do you want to order today?',
+
+      // This calls the next id
+      // i.e. id 1 in this case
+      trigger: '1',
+  }, {
+      id: '1',
+
+      // Here we want the user
+      // to enter input
+      user: true, 
+      trigger: '2',
+  }, {
+      id: '2',
+      message: "Excellent choice! What are you in the mood for? Hot or cold?",
+      trigger: '3'
+  }, {
+    id: '3',
+
+    // Here we want the user
+    // to enter input
+    user: true, 
+    trigger: '4',
+}, {
+      
+      message: `I added {previousValue} to the cart!`,
+      id: '4',
+      end: true
+  }
+];
+
+// Set some properties of the bot
+const config = {
+  botAvatar: "ChatBotIcon.jpg",
+  floating: true,
+};
+
 
   return (
   
@@ -178,6 +220,10 @@ function App() {
           <Route path="/buygiftcard" element={<GiftCard />} />
           <Route path="/orderonline" element={<OrderOnline />} />
         </Routes>
+        <ChatBot 
+          steps={steps} 
+          {...config}
+        />
     </div>
 
   );

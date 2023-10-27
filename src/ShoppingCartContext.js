@@ -5,8 +5,8 @@ export const ContextCart = createContext();
 
     const getUpdatedCart = () => {
         let newCartData = localStorage.getItem("cartItems");
-        if (newCartData === []) {
-            return [];
+        if (newCartData.length === 0) {
+            return {};
         }
         return JSON.parse(newCartData);
     }

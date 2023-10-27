@@ -26,6 +26,10 @@ function GooglePay() {
 
     let currUser = "";
 
+    if (user == null) {
+        user = {email: "", password: ""}
+    }
+
     for (let i = 0; i < customers.length; i++) {
         if (customers[i].Email === user.email) {
             currUser = customers[i];
