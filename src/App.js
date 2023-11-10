@@ -1,4 +1,5 @@
 import React from "react";
+import $ from "jquery";
 import "./App.css";
 import {Routes, Route} from "react-router-dom";
 import {MatchaBrulee, StrawMatcha, PassionGreen, 
@@ -77,10 +78,22 @@ const config = {
   floating: true,
 };
 
+function showDiv() {
+}
+
+
 
   return (
   
     <div className="App">
+      <button onClick={() => {
+         document.getElementById('welcomeDiv').style.display = "block";
+      }} className="open">
+          <img src="https://play-lh.googleusercontent.com/9AZOTXU_CpreTFAXUPAmJNkm8VGCb1C90fjJ9pHGcVmpGMDSTq3cUbaQJdBT9Tdp9A"/>
+      </button>
+      <iframe id="welcomeDiv" className="chatbot" width="350" height="430" allow="microphone;" 
+        src="https://console.dialogflow.com/api-client/demo/embedded/7de0fc64-7394-44b5-8411-c74dbc1ed5b1">
+        </iframe>
       <Routes>
           <Route path="/cartCheckout" element={<CartCheckout></CartCheckout>}></Route>
           <Route path="/my_account" element={<MyAccount></MyAccount>}></Route>
@@ -194,6 +207,7 @@ const config = {
           element={<PopupDivHotMilk menuItem={HotRedBean}/>}></Route>
           <Route path={`/products/${HotOreo.name.replace(/\s+/g, '-')}`}
           element={<PopupDivHotMilk menuItem={HotOreo}/>}></Route>
+        
 
         <Route path={`/products/${HotFlatWhite.name.replace(/\s+/g, '-')}`}
           element={<PopupDivHotMilk menuItem={HotFlatWhite}/>}></Route>
@@ -220,10 +234,6 @@ const config = {
           <Route path="/buygiftcard" element={<GiftCard />} />
           <Route path="/orderonline" element={<OrderOnline />} />
         </Routes>
-        <ChatBot 
-          steps={steps} 
-          {...config}
-        />
     </div>
 
   );

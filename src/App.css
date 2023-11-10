@@ -1,1 +1,28 @@
 
+.App .open {
+    position: fixed;
+    bottom: 90px;
+    right: 28px;
+    border-style: none;
+    z-index:10;
+    cursor:pointer;
+}
+
+.open img {
+    width:90px;
+    height:90px;
+    cursor:pointer;
+}
+
+.App .chatbot {
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    z-index:10;
+    display:none;
+}
