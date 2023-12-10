@@ -27,7 +27,8 @@ function GooglePay() {
     let currUser = "";
 
     if (user == null) {
-        user = {email: "", password: ""}
+        user.email = "";
+        user.password = ""; 
     }
 
     for (let i = 0; i < customers.length; i++) {
