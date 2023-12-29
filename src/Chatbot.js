@@ -1,33 +1,44 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import styles from "./Chatbot.module.css";
+import env from "react-dotenv";
 
 const Chatbot = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [isOpen, setIsOpen] = useState(false);
+
   const toggleChatbot = () => {
     setIsOpen(!isOpen);
   };
 
   const sendMessage = async () => {
     if (input.trim() !== '') {
-      const newMessage = { text: input, sender: 'user' };
-      setMessages([...messages, newMessage]);
+      const newUserMessage = { text: input, sender: 'user' };
+      setMessages(prevMessages => [...prevMessages, newUserMessage]);
       setInput('');
 
+      const headers = {
+        'x-api-key': `${env.REACT_APP_API_KEY}`,
+      };
+      
+      const requestData = {
+        sourceId: `${env.REACT_APP_SOURCE_ID}`,
+        messages: [
+          {
+            role: 'user',
+            content: input,
+          },
+        ],
+      };
+
       try {
-        const response = await axios.post("https://api.chatpdf.com/v1/chats/message", {
-          "x-api-key": "sec_RgneDnOhHBRFf84avjGujEq33ovkpyZ9",
-          "sourceId": "src_cha_V4yrBPl8I3SFkSww5C6l6", 
-          "messages": {
-            "role":"user", 
-            "content": input
-          }
-        });
+        
+        const response = await axios.post("https://api.chatpdf.com/v1/chats/message", requestData, {headers});
 
         const botReply = { text: response.data.content, sender: "bot" };
-        setMessages([...messages, botReply]);
+        setMessages(prevMessages => [...prevMessages, botReply]);
+        
       } catch (error) {
         console.error('Error sending message:', error);
       }
@@ -38,7 +49,8 @@ const Chatbot = () => {
     <div className={styles.chatbotIcon}>
       {!isOpen && (
         <div className={styles.chatbotClosed} onClick={toggleChatbot}>
-          <span className={styles.chatIcon}>Chat</span>
+           <img style={{ width: '45px', height: '45px' }} 
+            src="https://cdn-icons-png.flaticon.com/512/5962/5962463.png" alt="Chat Icon" className="chatIconImage" />
         </div>
       )}
       {isOpen && (
@@ -53,14 +65,13 @@ const Chatbot = () => {
             {messages.map((msg, index) => (
               <div
                 key={index}
-                className={`${styles.message} ${msg.sender === 'user' ? styles.user : styles.bot}`}
-              >
+                className={`${styles.message} ${msg.sender === 'user' ? styles.user : styles.bot}`}>
                 {msg.text}
               </div>
             ))}
           </div>
           <div className={styles.chatInput}>
-            <input
+            <textarea
               type="text"
               placeholder="Type a message..."
               value={input}

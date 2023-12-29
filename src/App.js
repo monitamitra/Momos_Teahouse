@@ -33,7 +33,7 @@ import {Login} from "./Login";
 import { Signup } from "./Signup";
 import { MyAccount } from "./MyAccount";
 import CartCheckout from "./CartCheckout"
-
+import Chatbot from "./Chatbot";
 
 function App() {
   return (
@@ -178,6 +178,7 @@ function App() {
           <Route path="/buygiftcard" element={<GiftCard />} />
           <Route path="/orderonline" element={<OrderOnline />} />
         </Routes>
+        <Chatbot />
     </div>
 
   );
