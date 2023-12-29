@@ -1,13 +1,16 @@
 import React from "react";
 import { useNavigate} from "react-router-dom";
 import styles from "./Item.module.css";
+import useAnalyticsEventTracker from './EventTracker';
 
 const NewItem = ({newItem}) => {
     const link = `${newItem.name}`.replace(/\s+/g, '-');
     const navigate = useNavigate();
+    const gaEventTracker = useAnalyticsEventTracker(`${newItem.name}`);
 
     const NewItem =  (
     <div  id={link} tabIndex="1" onClick={() => {
+        gaEventTracker('milk tea')
         navigate(`/products/${link}`)
     }}className={styles.ItemContainer}>
         <div className={styles.Item}>

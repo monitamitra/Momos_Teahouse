@@ -34,9 +34,9 @@ import { Signup } from "./Signup";
 import { MyAccount } from "./MyAccount";
 import CartCheckout from "./CartCheckout"
 
+
 function App() {
   return (
-  
     <div className="App">
       <Routes>
           <Route path="/cartCheckout" element={<CartCheckout></CartCheckout>}></Route>
