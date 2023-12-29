@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import styles from "./Chatbot.module.css";
-import env from "react-dotenv";
 
 const Chatbot = () => {
   const [messages, setMessages] = useState([]);
@@ -19,11 +18,11 @@ const Chatbot = () => {
       setInput('');
 
       const headers = {
-        'x-api-key': `${env.REACT_APP_API_KEY}`,
+        'x-api-key': `${window.env.REACT_APP_API_KEY}`,
       };
       
       const requestData = {
-        sourceId: `${env.REACT_APP_SOURCE_ID}`,
+        sourceId: `${window.env.REACT_APP_SOURCE_ID}`,
         messages: [
           {
             role: 'user',
