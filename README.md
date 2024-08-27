@@ -1,8 +1,8 @@
+- Engineered a react.js web app to order milk tea online 
+- Fused Google Firebase API and React Context API for shopping cart management and user authentication
+- Leveraged core React hooks (useState, useEffect, useReduce, etc.) for optimized state management
+- Integrated JQuery with Javascript, HTML and CSS to create an intuitive user interface 
 
-- **Design & Development:** Engineered Momo’s Teahouse, an elegant front-end react.js web application to order milk tea online
-- **Integration:** Seamlessly fused Google Firebase API and React Context API for shopping cart management and secure user authentication with aesthetic user interface components such as HTML and CSS
-- **Optimization:** Optimized user interactions by leveraging core React hooks (useState, useEffect, useContext, useReduce, etc.) 
-- **Version Control:** Effortlessly managed versions and facilitated workflow via GitHub integration through command line
 
 ![image](https://github.com/monitamitra/Momos_Teahouse/assets/31115172/821e0cbd-d5e3-4ab4-963a-7e4bc238ff94)
 ![image](https://github.com/monitamitra/Momos_Teahouse/assets/31115172/cd145b87-c5e1-4911-8b95-15e2ad0a36ba)
